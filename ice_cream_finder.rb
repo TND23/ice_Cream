@@ -2,7 +2,7 @@ require 'nokogiri'
 require 'addressable/uri'
 require 'rest-client'
 require 'json'
-
+#
 class Place
 
   attr_accessor :lat_long, :address, :name
