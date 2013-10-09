@@ -29,6 +29,7 @@ class Place
       :path => "maps/api/directions/json"
     ).to_s
 
+
     parsed = JSON.parse(RestClient.get(endpoint, :params => params))
     steps = parsed["routes"][0]["legs"][0]["steps"]
     directions = []
